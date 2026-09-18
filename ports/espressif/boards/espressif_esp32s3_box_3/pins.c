@@ -10,7 +10,8 @@
 static const mp_rom_map_elem_t board_module_globals_table[] = {
     CIRCUITPYTHON_BOARD_DICT_STANDARD_ITEMS
 
-    // PMOD connector 1 (dock). IO2/IO6 are USB D+/D- (GPIO19/20), not aliased.
+    // PMOD connector 1 (dock). IO2 is GPIO20 (USB D+) and IO6 is GPIO19 (USB
+    // D-); neither is aliased.
     { MP_ROM_QSTR(MP_QSTR_G42), MP_ROM_PTR(&pin_GPIO42) },
     { MP_ROM_QSTR(MP_QSTR_G39), MP_ROM_PTR(&pin_GPIO39) },
     { MP_ROM_QSTR(MP_QSTR_G40), MP_ROM_PTR(&pin_GPIO40) },
